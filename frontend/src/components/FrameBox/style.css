@@ -1,0 +1,26 @@
+body {
+    font-family: 'Bytebounce', sans-serif;
+    font-weight: 120;  /* Specifická váha (čím vyšší číslo, tím tučnější font) */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Styl pro editor, vypadá jako textový editor */
+  .editor {
+    margin: 2%;
+    width: 80%;  /* Box je 80% šířky okna */
+    height: 60%; /* Box je 60% výšky okna */
+    background-color: #141414; /* Tmavé pozadí pro editor */
+    border: 2px solid #333; /* Tmavý okraj kolem editoru */
+    border-radius: 8px; /* Zaoblené rohy */
+    overflow: auto; /* Umožní scrollování, pokud je text delší */
+    padding: 20px; /* Okraje pro text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Stín pro 3D efekt */
+    display: flex;
+    flex-direction: column; /* Umožní vertikální rozložení */
+    counter-reset: line; /* Resetuje čítač pro každou novou sekci */
+  }

@@ -1,0 +1,38 @@
+/* Základní styl pro obrázek */
+.logo {
+    width: 100%; /* Obrázek se přizpůsobí šířce rodičovského prvku */
+    max-width: 250px; /* Maximální šířka obrázku bude 150px */
+    height: auto; /* Výška se přizpůsobí proporcím obrázku */
+    display: block;
+    margin: 0 auto; /* Centrum obrázku v rámci rodičovského prvku */
+    opacity: 0; /* Skrytí obrázku na začátku */
+    transform: scale(0.8); /* Snížení obrázku na začátku */
+    animation: fadeIn 1s forwards, scaleIn 1s forwards; /* Animace načítání */
+    margin: 100px;
+}
+
+/* Animace pro fade-in efekt */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animace pro zvětšení obrázku při načítání */
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Hover efekt pro zvětšení loga při najetí myší */
+.logo:hover {
+    transform: scale(1.5); /* Zvětší logo o 10% při hoveru */
+    transition: transform 0.3s ease; /* Plynulý přechod pro hover efekt */
+}

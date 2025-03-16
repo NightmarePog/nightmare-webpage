@@ -1,5 +1,5 @@
-import Background from './components/background/background'
-import MainFrame from './components/MainFrame/MainFrame'
+import Background from './components/Background/Background';
+import MainFrame from './components/MainFrame/MainFrame';
 
 
 function App() {

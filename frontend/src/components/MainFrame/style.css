@@ -1,15 +1,63 @@
+/* Zajištění, že celý dokument bude mít výšku 100% a používat flexbox */
+body {
+  height: 100%;
+  display: flex; /* Aktivuje flexbox */
+  justify-content: flex-start; /* Horizontální zarovnání na levý okraj */
+  align-items: flex-end; /* Vertikální centrování na spodní okraj */
+  overflow: auto; /* Umožní scrollování, pokud obsah přesahuje výšku */
+}
+
+/* Styling boxu */
+/* Styling boxu */
 .box {
-    width: 300px;
-    height: 200px;
-    background-color: #4CAF50; /* Barva pozadí */
-    border: 2px solid #000; /* Okraj */
-    padding: 20px; /* Vnitřní okraje */
-    margin: 20px; /* Vnější okraje */
-    color: white; /* Barva textu */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    text-align: center;
+  position: relative;
+  margin-top: clamp(200vh, 50vh + 50%, 300vh);
+
+  width: 50vw; /* Box bude mít šířku 50% šířky okna */
+  flex-direction: column;
+  background: linear-gradient(to top right, #000000, rgb(15, 0, 0), #3b3b3b);
+  border: 2px solid #000000;
+  padding: 2rem; /* Padding v rem pro flexibilitu */
+  color: white;
+  display: flex; /* Flexbox pro centrování obsahu */
+  align-items: center; /* Vertikální centrování v boxu */
+  font-size: 1.2rem; /* Flexibilní velikost písma */
+  border-radius: 1rem; /* Radius rohu pro zaoblení */
+  opacity: 0; /* Skrytí boxu na začátku animace */
+
+  animation: boxAnimation 1s ease-out forwards; /* Animace pro přechod */
+}
+
+.SkillWrapper {
+  display: flex; /* Použijeme flexbox pro řádkové zobrazení */
+  flex-wrap: wrap; /* Umožní přetékání na nový řádek, pokud se nevejdou */
+  gap: 20px; /* Mezera mezi jednotlivými progressbary */
+  justify-content: flex-start; /* Zarovná položky na začátek */
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Definice animace */
+@keyframes boxAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(1.2) translateY(50px); /* Začátek animace - box je větší a posunutý */
   }
-  
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0); /* Konec animace - box je na své normální velikosti */
+  }
+}
+
+@media (max-width: 1080px) { /* Pro telefony */
+  .box {
+    margin-top: 300vh;
+  }
+}
+
+
+@media (min-width: 1024px) { /* Pro větší displeje */
+  .box {
+    margin-top: 200vh;
+  }
+}

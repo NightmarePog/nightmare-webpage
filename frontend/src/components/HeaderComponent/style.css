@@ -1,0 +1,10 @@
+.header {
+    background-color: #333; /* Tmavé pozadí pro hlavičku */
+    color: #fff; /* Bílé písmo */
+    padding: 10px 10px; /* Padding kolem textu */
+    font-size: 3rem;
+    font-weight: bold; /* Tučný text pro hlavičku */
+    border-radius: 5px 5px 0 0; /* Zaoblení horní části */
+    margin-bottom: 10px; /* Mezera mezi hlavičkou a textem */
+    text-align: left; /* Zarovnání textu do středu */
+  }

@@ -1,0 +1,51 @@
+
+
+body {
+  font-family: 'Bytebounce', sans-serif;
+  font-weight: 120;  /* Specifická váha (čím vyšší číslo, tím tučnější font) */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4; /* Světle šedé pozadí pro celé tělo */
+}
+
+
+/* Styl pro hlavičku */
+.header {
+  background-color: #333; /* Tmavé pozadí pro hlavičku */
+  color: #fff; /* Bílé písmo */
+  padding: 10px 10px; /* Padding kolem textu */
+  font-size: 3rem;
+  font-weight: bold; /* Tučný text pro hlavičku */
+  border-radius: 5px 5px 0 0; /* Zaoblení horní části */
+  margin-bottom: 10px; /* Mezera mezi hlavičkou a textem */
+  text-align: left; /* Zarovnání textu do středu */
+}
+
+/* Styl pro každou řádku textu v editoru */
+.editor-text {
+  color: #f4f4f4; /* Světle šedá barva textu */
+  font-size: 1.5rem; /* Trochu větší písmo */
+  white-space: pre-wrap; /* Umožní zalamování řádků v textu */
+  word-wrap: break-word; /* Zajišťuje, že dlouhá slova se zlomí na novém řádku */
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px; /* Mezery mezi řádky */
+}
+
+/* Přidání čísla řádky před text pomocí pseudoelementu */
+.editor-text::before {
+  content: counter(line) ". "; /* Vytvoří číslo řádky před textem */
+  counter-increment: line; /* Inkrementuje číslo řádky */
+  color: #888; /* Světle šedá barva pro čísla */
+  margin-right: 10px; /* Mezera mezi číslem a textem */
+  font-size: 2rem; /* Velikost čísla řádky */
+}
+
+/* Styly pro odkazy v textu */
+.editor-text a {
+  text-decoration: none; /* Odstraní podtržení */
+}
