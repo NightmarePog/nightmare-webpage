@@ -7,11 +7,17 @@ body {
   overflow: auto; /* Umožní scrollování, pokud obsah přesahuje výšku */
 }
 
+.base {
+  transform: translateY(30%);
+}
+
 /* Styling boxu */
 /* Styling boxu */
 .box {
+  margin: 0;
+  padding: 0;
   position: relative;
-  width: 50vw; /* Box bude mít šířku 50% šířky okna */
+  width: 100%; /* Box bude mít šířku 50% šířky okna */
   flex-direction: column;
   background: rgba(0, 0, 0, 0);
   border: 2px solid #000000;
@@ -47,15 +53,3 @@ body {
   }
 }
 
-@media (max-width: 1080px) { /* Pro telefony */
-  .box {
-    margin-top: 300vh;
-  }
-}
-
-
-@media (min-width: 1024px) { /* Pro větší displeje */
-  .box {
-    margin-top: 220vh;
-  }
-}
