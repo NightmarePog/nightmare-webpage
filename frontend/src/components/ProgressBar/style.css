@@ -5,7 +5,6 @@
 .progress-bar-container {
   width: min-content;  /* Použijeme 100% šířky pro přizpůsobení */
   max-width: 600px;  /* Maximální šířka */
-  margin: 20px auto;
   padding: 20px;
   border-radius: 20px;
   background-color: #000000;

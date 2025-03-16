@@ -26,13 +26,14 @@ body {
 }
 
 .SkillWrapper {
-  display: flex; /* Použijeme flexbox pro řádkové zobrazení */
-  flex-wrap: wrap; /* Umožní přetékání na nový řádek, pokud se nevejdou */
-  gap: 20px; /* Mezera mezi jednotlivými progressbary */
-  justify-content: flex-start; /* Zarovná položky na začátek */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Zarovnání položek do středu */
   margin: 20px auto;
   padding: 20px;
 }
+
 
 /* Definice animace */
 @keyframes boxAnimation {
