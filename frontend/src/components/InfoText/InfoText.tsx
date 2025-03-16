@@ -1,6 +1,4 @@
 import './style.css';
-import FrameBox from '../FrameBox/FrameBox';
-import HeaderComponent from '../HeaderComponent/HeaderComponent';
 
 function InfoText() {
   return (

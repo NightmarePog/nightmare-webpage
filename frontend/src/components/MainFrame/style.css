@@ -11,14 +11,11 @@ body {
 /* Styling boxu */
 .box {
   position: relative;
-  margin-top: clamp(200vh, 50vh + 50%, 300vh);
-
   width: 50vw; /* Box bude mít šířku 50% šířky okna */
   flex-direction: column;
-  background: linear-gradient(to top right, #000000, rgb(15, 0, 0), #3b3b3b);
+  background: rgba(0, 0, 0, 0);
   border: 2px solid #000000;
   padding: 2rem; /* Padding v rem pro flexibilitu */
-  color: white;
   display: flex; /* Flexbox pro centrování obsahu */
   align-items: center; /* Vertikální centrování v boxu */
   font-size: 1.2rem; /* Flexibilní velikost písma */
@@ -58,6 +55,6 @@ body {
 
 @media (min-width: 1024px) { /* Pro větší displeje */
   .box {
-    margin-top: 200vh;
+    margin-top: 220vh;
   }
 }

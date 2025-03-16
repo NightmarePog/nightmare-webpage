@@ -4,7 +4,7 @@ function Projects() {
   return (
       <>
       <div className="editor-text">
-        SCP: Demonstration project - Unfinished
+        SCP: Demonstration project - Dropped
       </div>
       <div className="editor-text">
         Recoil Divided - working on
