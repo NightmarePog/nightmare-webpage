@@ -1,0 +1,15 @@
+.box {
+    width: 300px;
+    height: 200px;
+    background-color: #4CAF50; /* Barva pozadí */
+    border: 2px solid #000; /* Okraj */
+    padding: 20px; /* Vnitřní okraje */
+    margin: 20px; /* Vnější okraje */
+    color: white; /* Barva textu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+  }
+  
