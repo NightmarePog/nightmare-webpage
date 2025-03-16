@@ -8,6 +8,7 @@ function App() {
     <>
     <Background/>
     <MainFrame/>
+    <title>Nightmare :3</title>
     </>
   )
 }
