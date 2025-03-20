@@ -38,7 +38,7 @@
 .progress-bar {
   width: auto;  /* Proužek zabírá celou šířku */
   height: 50px;
-  background-color: #f0f0f0;
+  background-color: #585858;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 10px;
@@ -53,7 +53,7 @@
 
 .percentage-text {
   font-size: 50px;
-  color: #000000;
+  color: #ffffff;
   text-align: center;      /* Horizontálně centrováno */
   
   display: flex;          /* Použití flexboxu pro centrování */
