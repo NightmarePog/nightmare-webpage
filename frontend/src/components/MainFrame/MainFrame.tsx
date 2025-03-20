@@ -51,7 +51,7 @@ function MainFrame() {
             <ProgressBar
             image='https://godotengine.org/assets/press/icon_color.svg'
             description='Godot Engine'
-            percentage={40}
+            percentage={20}
             />
             <ProgressBar
             image='https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg'
