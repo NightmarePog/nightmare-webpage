@@ -3,7 +3,7 @@
 /* Základní kontajner pro ProgressBar */
 
 .progress-bar-container {
-  width: min-content;  /* Použijeme 100% šířky pro přizpůsobení */
+  width: fit-content;  /* Použijeme 100% šířky pro přizpůsobení */
   max-width: 600px;  /* Maximální šířka */
   padding: 20px;
   border-radius: 20px;
