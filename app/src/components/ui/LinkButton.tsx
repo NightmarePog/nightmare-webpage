@@ -9,8 +9,10 @@ export function LinkButton({ title, link }: props) {
   const navigate = useNavigate()
 
   return (
-    <button className="m-10 text-3xl underline hover:scale-120" onClick={() => navigate(link)}>
-      {title}
-    </button>
+    <>
+      <button className="z-99 m-10 text-3xl underline hover:scale-120 text-secondary" onClick={() => navigate(link)}>
+        {title}
+      </button>
+    </>
   )
 }
