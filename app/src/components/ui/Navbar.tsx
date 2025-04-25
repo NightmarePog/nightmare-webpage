@@ -1,4 +1,4 @@
-import { LinkButton } from './LinkButton'
+import { LinkButton } from './buttons/LinkButton'
 import { info } from '@/constants/NavBar'
 
 export function NavBar() {
