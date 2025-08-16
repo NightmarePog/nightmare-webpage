@@ -1,10 +1,12 @@
 import { Route, Routes } from 'react-router-dom'
-import { LandingPage } from './components/ui/pages/LandingPage'
+import { PageInfo } from './constants/PageInfo'
 
 export function App() {
   return (
     <Routes>
-      <Route path="/" element={<LandingPage />} />
+      {PageInfo.map((item) => (
+        <Route path={item.link} element={<item.pageElement/>}/>
+      ))}
     </Routes>
   )
 }
