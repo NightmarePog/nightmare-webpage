@@ -1,16 +1,19 @@
-import Navbar from '../Navbar'
-import Starfield from '../Starfield'
+import { Description } from "../Description"
+import { Logo } from "../Logo"
+import { Subtitle } from "../Subtitle"
+import { Title } from "../Title"
+
 function HomePage() {
-  return (<>
-          <Starfield
-          speedFactor={0.05}
-          backgroundColor="black"
-          starColor={[255, 255, 255]}
-          starCount={5000} />
-          <div className="w-screen h-screen bg-primary ">
-            <Navbar/>
+  return (
+        <div className="flex items-center justify-center py-70 transition-transform duration-200"> {/*TODO*/}
+          <div>
+          <Subtitle>Hey! I am</Subtitle>
+          <Title>Lukáš!</Title>
+          <Description>Full stack developer</Description>
+          <Description>18yo</Description>
           </div>
-        </>
+          <Logo/>
+        </div>
   )
 }
 

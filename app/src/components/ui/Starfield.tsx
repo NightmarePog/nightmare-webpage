@@ -108,7 +108,7 @@ const animationRef = useRef<number | null>(null)
   return (
   <canvas
     ref={canvasRef}
-    className="fixed inset-0 z-0 p-0 m-0 pointer-events-none"
+    className="fixed -z-10 inset-0 p-0 m-0 pointer-events-none"
   />
   )
 }
