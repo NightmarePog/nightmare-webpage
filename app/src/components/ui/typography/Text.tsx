@@ -7,7 +7,7 @@ interface props {
 
 const Text = ({ children }: props) => {
   const isMobile = useIsMobile();
-  return <p className={isMobile? "text-xl" :"text-2xl"}>{children}</p>;
+  return <p className={isMobile? "text-md" :"text-2xl"}>{children}</p>;
 };
 
 export default Text;

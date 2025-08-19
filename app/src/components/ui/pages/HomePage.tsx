@@ -1,9 +1,10 @@
 import socials from "@/constants/Socials"
-import { Description } from "../Description"
+import { Description } from "../typography/Description"
 import { Logo } from "../Logo"
 import { Subtitle } from "../typography/Subtitle"
 import { Title } from "../typography/Title"
 import { IconButton } from "../button/IconButton"
+import useIsMobile from "@/hook/useIsMobile"
 
 /**
  * basically just a number that limits social counts only on N ones
@@ -12,17 +13,19 @@ const SocialLimit = 3
 
 
 function HomePage() {
+  const isMobile = useIsMobile();
   return (
     <>
-      <div className="flex items-center justify-center pt-70 mx-5">
+      <div className={"items-center justify-center  mx-5 " + (isMobile ? "text-center block mx-auto pt-40": "flex pt-70")}>
+        {isMobile ? <Logo className="mx-auto" /> : ""}
         <div>
-          <div className="animate-fade-in-up">
+          <div className="animate-fade-in-up ">
           <Subtitle>Hey!<span className="inline-block w-4" />I am</Subtitle>
           <Title>Lukáš!</Title>
           <Description>Full stack developer</Description>
           <Description>18yo</Description>
           </div>
-          <div className="flex">
+          <div className="">
             {socials.map((item, index) =>
               index >= SocialLimit ? null : (
                 <IconButton
@@ -35,7 +38,7 @@ function HomePage() {
             )}
           </div>
         </div>
-        <Logo />
+        {isMobile ? "" : <Logo />}
       </div>
 
       {/* fade in animation */}

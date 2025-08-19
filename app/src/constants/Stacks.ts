@@ -1,5 +1,5 @@
 import { IconButtonProps } from "@/types/IconButton"
-import { SiBlender, SiCss3, SiGodotengine, SiHtml5, SiJavascript, SiLua, SiNextdotjs, SiPostgresql, SiPython, SiReact, SiRobloxstudio, SiTailwindcss, SiTypescript } from "react-icons/si"
+import { SiBlender, SiC, SiCss3, SiGodotengine, SiHtml5, SiJavascript, SiLua, SiNextdotjs, SiPostgresql, SiPython, SiReact, SiRobloxstudio, SiTailwindcss, SiTypescript } from "react-icons/si"
 
 
 export const webStack: IconButtonProps[] = [
@@ -96,6 +96,13 @@ export const othersStack: IconButtonProps[] = [
         icon: SiLua,
         description: "I work with this language in Roblox Studio, ComputerCraft, or sometimes just for fun!",
         className: "text-[#00007D]"
+    },
+    {
+        name: "C",
+        link: "https://en.wikipedia.org/wiki/C_(programming_language)",
+        icon: SiC,
+        description: "I don't use this language much, but I wanted to learn it so I can see the world of low end",
+        className: "text-[#abbbce]"
     },
     
 ]
