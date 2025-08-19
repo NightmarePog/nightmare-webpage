@@ -7,7 +7,7 @@ interface props {
 
 export function Description({ children }: props) {
   return (
-      <p className="text-primary-foreground text-2xl max-w-md">
+      <p className="text-secondary text-[20px] max-w-md">
         {children}
       </p>
   );
