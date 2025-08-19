@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { Button } from '../button'
+import { Button } from './button'
 
 interface props {
   title: string
@@ -11,7 +11,7 @@ export function LinkButton({ title, link }: props) {
 
   return (
     <>
-      <Button className="m-2 text-2xl hover text-secondary" variant={"link"} onClick={() => navigate(link)}>
+      <Button className="m-2 text-2xl hover text-secondary cursor-pointer" variant={"link"} onClick={() => navigate(link)}>
         {title} 
       </Button>
     </>

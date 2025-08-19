@@ -1,19 +1,14 @@
-import { SiCss3, SiHtml5, SiJavascript, SiNextdotjs, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si"
+import { IconButtonProps } from "@/components/types/IconButton"
+import { SiCss3, SiGodotengine, SiHtml5, SiJavascript, SiNextdotjs, SiPostgresql, SiPython, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si"
 
-interface stack {
-    name: string,
-    link: string,
-    description?: string
-    icon: React.ElementType
 
-}
-
-export const webStack: stack[] = [
+export const webStack: IconButtonProps[] = [
     
     {
         name: "HTML",
         link: "https://cs.wikipedia.org/wiki/Hypertext_Markup_Language",
-        icon: SiHtml5
+        icon: SiHtml5,
+        description: "a little test"
     },
     {
         name: "CSS",
@@ -40,9 +35,30 @@ export const webStack: stack[] = [
         link: "https://react.dev/",
         icon: SiReact
     },
-        {
+    {
         name: "Next.js",
         link: "https://nextjs.org/",
         icon: SiNextdotjs
     },
+    {
+        name: "PostgreSQL",
+        link: "https://www.postgresql.org/",
+        icon: SiPostgresql
+    },
+]
+
+export const gameDevStack: IconButtonProps[] = [
+        {
+        name: "Godot",
+        link: "https://godotengine.org/",
+        icon: SiGodotengine
+    },
+]
+
+export const othersStack: IconButtonProps[] = [
+    {
+    name: "Python",
+    link: "https://www.python.org/",
+    icon: SiPython
+    }
 ]

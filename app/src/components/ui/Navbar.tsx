@@ -1,5 +1,5 @@
 import { ReactNode, useEffect, useState } from "react"
-import { LinkButton } from "./buttons/LinkButton"
+import { LinkButton } from "./button/LinkButton"
 import { PageInfo } from "@/constants/PageInfo"
 import { Menu } from "./Menu"
 

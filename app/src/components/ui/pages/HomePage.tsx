@@ -1,9 +1,9 @@
 import socials from "@/constants/Socials"
 import { Description } from "../Description"
 import { Logo } from "../Logo"
-import { Subtitle } from "../Subtitle"
-import { Title } from "../Title"
-import { SocialLogo } from "../SocialLogo"
+import { Subtitle } from "../typography/Subtitle"
+import { Title } from "../typography/Title"
+import { IconButton } from "../button/IconButton"
 
 function HomePage() {
   return (
@@ -18,7 +18,7 @@ function HomePage() {
           </div>
           <div className="flex">
             {socials.map((item, index) => (
-              <SocialLogo 
+              <IconButton 
               src={item} 
               className="animate-fade-in-up opacity-0"
               style={{ animationDelay: `${0.3+index * 0.1}s` }}

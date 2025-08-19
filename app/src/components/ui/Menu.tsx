@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button/button"
 import {
   Sheet,
   SheetClose,
@@ -8,7 +8,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { PageInfo } from "@/constants/PageInfo"
-import { LinkButton } from "./buttons/LinkButton"
+import { LinkButton } from "./button/LinkButton"
 import { MenuIcon } from "lucide-react"
 
 export function Menu() {

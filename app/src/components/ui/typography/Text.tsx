@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 interface props {
-    children: string
+    children: ReactNode
 }
 
 const Text = ({ children }: props) => {
