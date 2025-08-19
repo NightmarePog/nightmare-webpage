@@ -1,4 +1,4 @@
-import { IconButtonProps } from "@/components/types/IconButton"
+import { IconButtonProps } from "@/types/IconButton"
 import { SiBlender, SiCss3, SiGodotengine, SiHtml5, SiJavascript, SiLua, SiNextdotjs, SiPostgresql, SiPython, SiReact, SiRobloxstudio, SiTailwindcss, SiTypescript } from "react-icons/si"
 
 

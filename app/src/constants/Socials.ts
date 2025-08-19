@@ -1,4 +1,4 @@
-import { IconButtonProps } from "@/components/types/IconButton"
+import { IconButtonProps } from "@/types/IconButton"
 import { SiGithub, SiInstagram, SiLinkedin } from "react-icons/si"
 
 

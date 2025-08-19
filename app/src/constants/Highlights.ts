@@ -1,4 +1,4 @@
-import { IconButtonProps } from "@/components/types/IconButton";
+import { IconButtonProps } from "@/types/IconButton";
 import { TourDeApp } from "@/components/ui/CustomIcons";
 export interface highlightProps extends IconButtonProps {
     highlightDescription: string

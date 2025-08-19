@@ -1,4 +1,4 @@
-import { IconButtonProps } from "@/components/types/IconButton"
+import { IconButtonProps } from "@/types/IconButton"
 import { Tooltip, TooltipContent, TooltipTrigger } from "../tooltip"
 import { Title } from "../typography/Title"
 
