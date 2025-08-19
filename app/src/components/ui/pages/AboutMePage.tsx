@@ -3,7 +3,6 @@ import { Subtitle } from "../typography/Subtitle"
 import Text from "../typography/Text"
 import { Title } from "../typography/Title"
 import { IconButton } from "../button/IconButton"
-import { TourDeApp } from "../CustomIcons"
 import highlights from "@/constants/Highlights"
 const AboutMePage = () => {
     return <div className="flex items-center justify-center pt-20 mx-5">
@@ -20,20 +19,20 @@ const AboutMePage = () => {
             <div className="p-5"/>
             <Subtitle>Web development</Subtitle>
             {webStack.map((item) => (
-                <IconButton src={item}/>
+                <IconButton src={item} className={item.className}/>
             ))}
             <Subtitle>Game development</Subtitle>
             {gameDevStack.map((item) => (
-                <IconButton src={item}/>
+                <IconButton src={item} className={item.className}/>
             ))}
             <Subtitle>Other tools I use</Subtitle>
             {othersStack.map((item) => (
-                <IconButton src={item}/>
+                <IconButton src={item} className={item.className}/>
             ))}
             <Title>Highlights</Title>
             <div className="flex py-4">
                 {highlights.map((item) => (<>
-                        <IconButton src={item} className={item.className}/>
+                        <IconButton scaleOnHover={false} src={item} className={item.className} style={item.style}/>
                         <Subtitle className="my-auto">- {item.highlightDescription}</Subtitle>
                     </>
                 ))}

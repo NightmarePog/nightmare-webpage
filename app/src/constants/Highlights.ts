@@ -10,7 +10,7 @@ const highlights: highlightProps[] = [
         description: "web Development Competition",
         link: "https://tourde.app/",
         icon: TourDeApp,
-        className: "w-100 p-2 brightness-2000 h-auto",
+        className: "w-100 p-2 brightness-2000 hover:brightness-2000 h-auto hover:scale-100",
         highlightDescription: "10th place as Black Mesa Team"
     }
 ]

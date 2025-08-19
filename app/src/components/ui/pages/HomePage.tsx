@@ -20,7 +20,7 @@ function HomePage() {
             {socials.map((item, index) => (
               <IconButton 
               src={item} 
-              className="animate-fade-in-up opacity-0"
+              className={"animate-fade-in-up opacity-0 "+item.className}
               style={{ animationDelay: `${0.3+index * 0.1}s` }}
               />
         

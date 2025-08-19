@@ -4,4 +4,5 @@ export interface IconButtonProps {
     icon: React.ElementType
     description?: string
     className?: string
+    style?: React.CSSProperties
 }
