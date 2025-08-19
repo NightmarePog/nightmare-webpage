@@ -5,6 +5,12 @@ import { Subtitle } from "../typography/Subtitle"
 import { Title } from "../typography/Title"
 import { IconButton } from "../button/IconButton"
 
+/**
+ * basically just a number that limits social counts only on N ones
+ */
+const SocialLimit = 3
+
+
 function HomePage() {
   return (
     <>
@@ -17,14 +23,16 @@ function HomePage() {
           <Description>18yo</Description>
           </div>
           <div className="flex">
-            {socials.map((item, index) => (
-              <IconButton 
-              src={item} 
-              className={"animate-fade-in-up opacity-0 "+item.className}
-              style={{ animationDelay: `${0.3+index * 0.1}s` }}
-              />
-        
-            ))}
+            {socials.map((item, index) =>
+              index >= SocialLimit ? null : (
+                <IconButton
+                  key={index}
+                  src={item}
+                  className={"animate-fade-in-up opacity-0 " + item.className}
+                  style={{ animationDelay: `${0.3 + index * 0.1}s` }}
+                />
+              )
+            )}
           </div>
         </div>
         <Logo />

@@ -15,7 +15,7 @@ export function Menu() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button><MenuIcon/></Button>
+        <Button><MenuIcon className="size-8"/></Button>
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
@@ -25,7 +25,11 @@ export function Menu() {
           
           {PageInfo.map((item) => (
             <SheetClose>
-            <LinkButton title={item.title} link={item.link}/>
+              {item.link !== "/" && (
+                <LinkButton key={item.link} link={item.link}>
+                  {item.title}
+                </LinkButton>
+              )}
             </SheetClose>
           ))}
         </div>

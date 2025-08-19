@@ -1,5 +1,5 @@
 import { IconButtonProps } from "@/components/types/IconButton"
-import { SiCss3, SiGodotengine, SiHtml5, SiJavascript, SiNextdotjs, SiPostgresql, SiPython, SiReact, SiRobloxstudio, SiTailwindcss, SiTypescript } from "react-icons/si"
+import { SiBlender, SiCss3, SiGodotengine, SiHtml5, SiJavascript, SiLua, SiNextdotjs, SiPostgresql, SiPython, SiReact, SiRobloxstudio, SiTailwindcss, SiTypescript } from "react-icons/si"
 
 
 export const webStack: IconButtonProps[] = [
@@ -67,6 +67,19 @@ export const gameDevStack: IconButtonProps[] = [
         icon: SiRobloxstudio,
         className: "text-[#009efeff]" 
     },
+        {
+        name: "Blender",
+        link: "https://www.blender.org/",
+        icon: SiBlender,
+        description: "I mostly just do models for my games here"
+    },
+        {
+        name: "TypeScript",
+        link: "https://www.typescriptlang.org/",
+        icon: SiTypescript,
+        className: "text-[#3178C6]",
+        description: "in roblox community, there is a roblox-ts which is TypeScript compiler into Lua, I work with this a lot!"
+    },
 ]
 
 export const othersStack: IconButtonProps[] = [
@@ -74,6 +87,15 @@ export const othersStack: IconButtonProps[] = [
         name: "Python",
         link: "https://www.python.org/",
         icon: SiPython,
-        className: "text-white"
-    }
+        className: "text-white",
+        description: "I can work with python, but I rarely use it!"
+    },
+    {
+        name: "Lua",
+        link: "https://www.lua.org/",
+        icon: SiLua,
+        description: "I work with this language in Roblox Studio, ComputerCraft, or sometimes just for fun!",
+        className: "text-[#00007D]"
+    },
+    
 ]
