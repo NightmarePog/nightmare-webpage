@@ -1,3 +1,4 @@
+import useIsMobile from "@/hook/useIsMobile";
 import { ReactNode } from "react";
 
 interface props {
@@ -5,7 +6,8 @@ interface props {
 }
 
 const Text = ({ children }: props) => {
-  return <p className="text-2xl">{children}</p>;
+  const isMobile = useIsMobile();
+  return <p className={isMobile? "text-xl" :"text-2xl"}>{children}</p>;
 };
 
 export default Text;

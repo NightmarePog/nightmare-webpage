@@ -1,27 +1,17 @@
-import { useEffect, useState } from "react"
+
 import { LinkButton } from "./button/LinkButton"
 import { PageInfo } from "@/constants/PageInfo"
 import { Menu } from "./Menu"
 import { HomeIcon } from "lucide-react"
+import useIsMobile from "@/hook/useIsMobile"
 
 
 // navbar which you can see up
 const Navbar = () => {
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768)
-    }
-
-    handleResize()
-    window.addEventListener("resize", handleResize)
-
-    return () => window.removeEventListener("resize", handleResize)
-  }, [])
+  const isMobile = useIsMobile();
 
   return (
-    <header className="bg-primary border-primary-foreground border-b-1 relative flex items-center justify-between p-4">
+    <header className={"bg-primary border-primary-foreground border-b-1 relative flex items-center justify-between " + (isMobile ? "p-1" : "p-4")}>
       <div className="flex items-center">
         <LinkButton  link={"/"} ><HomeIcon className="size-8"/></LinkButton>
       </div>

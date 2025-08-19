@@ -1,3 +1,4 @@
+import useIsMobile from "@/hook/useIsMobile"
 import { ReactNode } from "react"
 
 interface SubtitleProps {
@@ -6,8 +7,9 @@ interface SubtitleProps {
 }
 
 export const Subtitle = ({ children, className = "" }: SubtitleProps) => {
+  const isMobile = useIsMobile()
   return (
-    <h2 className={`text-xl md:text-2xl font-semibold  ${className}`}>
+    <h2 className={isMobile ? 'text-xl' : 'text-2xl ' +`font-semibold  ${className}`}>
       {children}
     </h2>
   )
